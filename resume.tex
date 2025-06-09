@@ -1,26 +1,12 @@
 
 \documentclass[]{deedy-resume-openfont}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\namesection{Nabarun}{Chatterjee}{
-\href{mailto:nabarun.chatterjee@gmail.com}{nabarun.chatterjee@gmail.com}
-}
+\namesection{Nabarun}{Chatterjee}{Site Reliability Engineer \textbullet{} Devops \textbullet{} Full Stack Engineer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -28,43 +14,59 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Skills}
-\subsection{Programming}
-Python \textbullet{}   Shell \textbullet{} Golang(Beginner) \\
-\textbullet{} \LaTeX\ \\
-%\sectionsep
-\subsection{Tools}
-Terraform \textbullet{} Packer \textbullet{} Vagrant \textbullet{} Ansible \\
-\textbullet{} Saltstack  \textbullet{} Chef \textbullet{} Mesos Marathon\\
-\textbullet{} Prometheus \textbullet{} Consul\\
-%\sectionsep
-\subsection{Cloud}
-AWS \textbullet{} Microsoft Azure\\
-%\sectionsep
-\subsection{Others}
-Flask \textbullet{} Wireshark
-\sectionsep
 
-\section{Want to Learn}
-\subsection{Technology}
-Kubernetes  \textbullet{} Cryptography  \textbullet{} AI \\
- \textbullet{} Computational Geometry
-%\sectionsep
+    \section{Contact Info}
+
+    \subsection{Email}
+    \location{\href{mailto:nabarun.chatterjee@gmail.com}{nabarun.chatterjee@gmail.com} }
+\sectionsep
+    \subsection{Phone}
+    \location{{\href{tel: +918197772826}{+91 819 777 2826}}}
+\sectionsep
+    \subsection{Github}
+    \location{\href{https://github.com/nabarunchatterjee}{github.com/nabarunchatterjee}}
+\sectionsep
+    \subsection{LinkedIn}
+    \location{\href{linkedin.com/in/nabarunchatterjee}{linkedin.com/in/nabarunchatterjee}}
+
+
+\sectionsep
+\section{Skills}
+\subsection{Languages}
+    \location{Python, Go, Shell, JavaScript (React) }
+\sectionsep
+\subsection{DevOps Tools}
+    \location{Terraform, Ansible, SaltStack, Chef, Packer, Vagrant }
+\sectionsep
+\subsection{Cloud \& Infra}
+    \location{AWS, Azure}
+\sectionsep
+\subsection{Monitoring}
+    \location{Prometheus, Splunk, Consul }
+\sectionsep
 \subsection{Others}
-Photography  \textbullet{} Spanish Language
+    \location{Flask, Figma, Wireshark}
+
+\sectionsep
+\section{Learning Goals}
+\subsection{Technology}
+\location{Kubernetes, Cryptography, AI, Computational Geometry}
+
+\sectionsep
+\subsection{Others}
+    \location{Design}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vskip 3cm
-%    \rule{6cm}{1pt}
+\sectionsep
 \section{Education}
 
 \subsection{Kalyani Government}
@@ -77,17 +79,6 @@ Photography  \textbullet{} Spanish Language
 \subsection{Vivekananda University}
 \descript{M.Sc in Computer Science}
 \location{2009-2011 | Belur, WB}
-\sectionsep
-
-\subsection{Ramakrishna Mission}
-\subsection{Vidyamandira}
-\descript{B.Sc in Computer Applications}
-\location{2006-2009 | Belur, WB}
-\sectionsep
-
-\subsection{Don Bosco School}
-\location{ISC(10+2) 2005|  Bandel, WB}
-\location{ICSE(10) 2003|  Bandel, WB}
 \sectionsep
 
 
@@ -106,49 +97,55 @@ Photography  \textbullet{} Spanish Language
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\sectionsep
 
-\runsubsection{Atlassian}
-    \descript{| Site Reliability Engineer }
-\location{April 2020 - December 2021 | Bengaluru}
+    \runsubsection{MemoryTimeline}
+    \descript{ (Startup) | Co-Founder \& Full Stack Engineer | Jan 2022 - Present }
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Splunk provider for terraform to create dashboards
-\item Yml interface over terraform for managing unified observability artifacts 
+\item Built progressive web app in \custombold{ReactJS} to store memories (photos, text) and auto-generate collages with size constraints for social media use cases.
+\item Developed admin website for internal management with \custombold{react-admin}.
+\item Designed authentication using \custombold{OAuth2 + Cognito}, with custom \custombold{Lambda Authorizer} in Go.
+\item Implemented event-based image resizing via Lambda + S3.
+\item Built backend in \custombold{Go}; used \custombold{serverless infrastructure} for cost efficiency.
+\item Set up CI/CD for both code and infra using \custombold{GitHub Actions}.
 \end{tightemize}
 \sectionsep
-\runsubsection{Swiggy}
-    \descript{| Senior Devops Engineer }
-\location{November 2018 - December 2019 | Bengaluru}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Atlassian}
+    \descript{| Site Reliability Engineer | Apr 2020 - Dec 2021 }
 \begin{tightemize}
-\item Stabilize monitoring and alerting using Prometheus and Consul, design Thanos cluster for HA Prometheus setup
+\item Splunk provider for terraform to create dashboards
+\item Yml interface over terraform for managing observability artifacts 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Swiggy}
+    \descript{| Senior Devops Engineer | Nov 2018 - Dec 2019}
+\begin{tightemize}
+\item Setup and stabilize HA monitoring and alerting across all services 
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Olacabs}
-    \descript{| Production Engineer (Core Infrastructure) }
-\location{June 2016 – October 2018 | Bengaluru}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \descript{| Production Engineer | Jun 2016 – Oct 2018}
 \begin{tightemize}
-\item Rest Apis over Terraform and Packer in Python for creating infrastructure in AWS and Azure.
-\item Automate linux users and groups creation and manage permissions on all servers.
-\item Setup migration from chef 11 to chef 12 and automate creation of cookbook source dynamically using Berkshelf and gitlab webhooks.
+\item Apis for one click infrastructure management in AWS and Azure.
+\item Automate linux users and groups management across all servers.
+\item Automate migration from chef 11 to 12 to speedup infrastructure deployment.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Knowlarity}
-\descript{| Devops Engineer }
-\location{April 2015 – May 2016 | Bengaluru}
+\descript{| Devops Engineer | Apr 2015 – May 2016 }
 \begin{tightemize}
-\item Automating Telephony Cluster Creation and Phasewise Release of Telephony Platform(Ansible)
+\item Automating Telephony Cluster Creation and Phasewise Release
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Plivo}
-\descript{| Devops Engineer }
-\location{June 2013 – Dec 2013 and Aug 2014 - March 2015| Bengaluru}
+    \descript{| Devops Engineer | Jun 2013 – Dec 2013 \& Aug 2014 - Mar 2015}
 \begin{tightemize}
-\item Call Quality Analyzer - Extraction of all call detail records, audio, disconnection quality parameters like latency, jitter, ptime and detecting probable issues if extracted values are outside a predefined range.
+\item Built \custombold{Call Quality Analyzer} to extract CDRs, audio, and metrics (latency, jitter, ptime) to enable faster pinpointing of call quality issues. 
 \end{tightemize}
 \sectionsep
 
@@ -158,16 +155,9 @@ Photography  \textbullet{} Spanish Language
 
 %\rule{12.5cm}{1pt}
 \section{Research}
-\runsubsection{Kalyani Goverment Engineering College}
-\descript{| MTech Project}
-\location{2012 – 2013  | Kalyani, WB}
     \custombold{Detection of Blackhole Behaviour Using Triangular Encryption in NS2} \href{http://www.sciencedirect.com/science/article/pii/S2212017313005537}{[Paper Link]}
 \sectionsep
-\sectionsep
 
-\runsubsection{Indian Statistical Institute}
-\descript{| Project Linked Person }
-\location{Feb 2014 – July 2014  | Kolkata, WB}
     \custombold{Nature Inspired Heuristics for Large Scale Dynamic Engineering Problems} \href{https://github.com/nabarunchatterjee/EvoComp}{[Github Link]}
 \sectionsep
 \sectionsep
@@ -176,13 +166,10 @@ Photography  \textbullet{} Spanish Language
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
-\runsubsection{Ramakrishna Mission Vivekananda University}
-\descript{| M.Sc. Project}
-\location{2010 – 2011 | Belur, WB}
-    \custombold{A Hybrid Minimum Spanning Tree Algorithm on the GPU} - A mixture of the Prim's and the Boruvka's approach to find the minimum spanning tree of a graph. The implementation uses Nvidia's GPUs and CUDA and scalable primitives like scan, segmented scan, compact and split to perform the task.
+    \custombold{A Hybrid Minimum Spanning Tree Algorithm on the GPU} - A mixture of the Prim's and the Boruvka's approach to find the minimum spanning tree of a graph using Nvidia's GPUs and CUDA.
 \sectionsep
 \sectionsep
 
 
 \end{minipage}
-\end{document}  \documentclass[]{article}
+\end{document}  
